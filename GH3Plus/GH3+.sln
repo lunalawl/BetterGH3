@@ -1,0 +1,99 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.2.11415.280
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "core", "src\core\GH3PlusCore.vcxproj", "{3ECB28CB-CDCA-4193-B4BF-1F7EC67C9E03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{E2398C90-1F1C-4DEB-9430-CC10D92C630A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FastGH3", "src\plugins\FastGH3\FastGH3.vcxproj", "{90B360C3-5D52-4906-8E92-19846F36DB23}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NoteLimitFix", "src\plugins\noteLimit\NoteLimitFix.vcxproj", "{AD3A956F-41C3-4493-9C88-8A000167BE8D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TapHopoChord", "src\plugins\TapHopoChord\TapHopoChord.vcxproj", "{ECC8A22B-8DA2-4D50-9679-0DA29AC7D4FF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ForceTapNotes", "src\plugins\forceTapNotes\ForceTapNotes.vcxproj", "{32615C85-50B5-48DB-B611-C8046783FB9B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BetterGH3", "src\plugins\BetterGH3\BetterGH3.vcxproj", "{91746F52-8303-467D-84E5-F5633BF0EDD9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SongLimitFix", "src\plugins\songLimit\SongLimitFix.vcxproj", "{9A18518C-38BF-48CA-88F8-206DEAE220FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reverse Engineering", "Reverse Engineering", "{2627C5DA-4BE7-4219-BFAF-69F42104C943}"
+	ProjectSection(SolutionItems) = preProject
+		src\gh3\GH3Functions.h = src\gh3\GH3Functions.h
+		src\gh3\GH3GlobalAddresses.h = src\gh3\GH3GlobalAddresses.h
+		src\gh3\GH3Keys.h = src\gh3\GH3Keys.h
+		notes.txt = notes.txt
+		unshared.txt = unshared.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3ECB28CB-CDCA-4193-B4BF-1F7EC67C9E03}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3ECB28CB-CDCA-4193-B4BF-1F7EC67C9E03}.Debug|Win32.Build.0 = Debug|Win32
+		{3ECB28CB-CDCA-4193-B4BF-1F7EC67C9E03}.Debug|x64.ActiveCfg = Debug|Win32
+		{3ECB28CB-CDCA-4193-B4BF-1F7EC67C9E03}.Release|Win32.ActiveCfg = Release|Win32
+		{3ECB28CB-CDCA-4193-B4BF-1F7EC67C9E03}.Release|Win32.Build.0 = Release|Win32
+		{3ECB28CB-CDCA-4193-B4BF-1F7EC67C9E03}.Release|x64.ActiveCfg = Release|Win32
+		{90B360C3-5D52-4906-8E92-19846F36DB23}.Debug|Win32.ActiveCfg = Debug|Win32
+		{90B360C3-5D52-4906-8E92-19846F36DB23}.Debug|Win32.Build.0 = Debug|Win32
+		{90B360C3-5D52-4906-8E92-19846F36DB23}.Debug|x64.ActiveCfg = Debug|Win32
+		{90B360C3-5D52-4906-8E92-19846F36DB23}.Release|Win32.ActiveCfg = Release|Win32
+		{90B360C3-5D52-4906-8E92-19846F36DB23}.Release|Win32.Build.0 = Release|Win32
+		{90B360C3-5D52-4906-8E92-19846F36DB23}.Release|x64.ActiveCfg = Release|Win32
+		{AD3A956F-41C3-4493-9C88-8A000167BE8D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AD3A956F-41C3-4493-9C88-8A000167BE8D}.Debug|Win32.Build.0 = Debug|Win32
+		{AD3A956F-41C3-4493-9C88-8A000167BE8D}.Debug|x64.ActiveCfg = Debug|Win32
+		{AD3A956F-41C3-4493-9C88-8A000167BE8D}.Debug|x64.Build.0 = Debug|Win32
+		{AD3A956F-41C3-4493-9C88-8A000167BE8D}.Release|Win32.ActiveCfg = Release|Win32
+		{AD3A956F-41C3-4493-9C88-8A000167BE8D}.Release|Win32.Build.0 = Release|Win32
+		{AD3A956F-41C3-4493-9C88-8A000167BE8D}.Release|x64.ActiveCfg = Release|Win32
+		{AD3A956F-41C3-4493-9C88-8A000167BE8D}.Release|x64.Build.0 = Release|Win32
+		{ECC8A22B-8DA2-4D50-9679-0DA29AC7D4FF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ECC8A22B-8DA2-4D50-9679-0DA29AC7D4FF}.Debug|Win32.Build.0 = Debug|Win32
+		{ECC8A22B-8DA2-4D50-9679-0DA29AC7D4FF}.Debug|x64.ActiveCfg = Debug|Win32
+		{ECC8A22B-8DA2-4D50-9679-0DA29AC7D4FF}.Release|Win32.ActiveCfg = Release|Win32
+		{ECC8A22B-8DA2-4D50-9679-0DA29AC7D4FF}.Release|Win32.Build.0 = Release|Win32
+		{ECC8A22B-8DA2-4D50-9679-0DA29AC7D4FF}.Release|x64.ActiveCfg = Release|Win32
+		{32615C85-50B5-48DB-B611-C8046783FB9B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{32615C85-50B5-48DB-B611-C8046783FB9B}.Debug|Win32.Build.0 = Debug|Win32
+		{32615C85-50B5-48DB-B611-C8046783FB9B}.Debug|x64.ActiveCfg = Debug|Win32
+		{32615C85-50B5-48DB-B611-C8046783FB9B}.Release|Win32.ActiveCfg = Release|Win32
+		{32615C85-50B5-48DB-B611-C8046783FB9B}.Release|Win32.Build.0 = Release|Win32
+		{32615C85-50B5-48DB-B611-C8046783FB9B}.Release|x64.ActiveCfg = Release|Win32
+		{91746F52-8303-467D-84E5-F5633BF0EDD9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{91746F52-8303-467D-84E5-F5633BF0EDD9}.Debug|Win32.Build.0 = Debug|Win32
+		{91746F52-8303-467D-84E5-F5633BF0EDD9}.Debug|x64.ActiveCfg = Debug|Win32
+		{91746F52-8303-467D-84E5-F5633BF0EDD9}.Debug|x64.Build.0 = Debug|Win32
+		{91746F52-8303-467D-84E5-F5633BF0EDD9}.Release|Win32.ActiveCfg = Release|Win32
+		{91746F52-8303-467D-84E5-F5633BF0EDD9}.Release|Win32.Build.0 = Release|Win32
+		{91746F52-8303-467D-84E5-F5633BF0EDD9}.Release|x64.ActiveCfg = Release|Win32
+		{91746F52-8303-467D-84E5-F5633BF0EDD9}.Release|x64.Build.0 = Release|Win32
+		{9A18518C-38BF-48CA-88F8-206DEAE220FD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9A18518C-38BF-48CA-88F8-206DEAE220FD}.Debug|Win32.Build.0 = Debug|Win32
+		{9A18518C-38BF-48CA-88F8-206DEAE220FD}.Debug|x64.ActiveCfg = Debug|Win32
+		{9A18518C-38BF-48CA-88F8-206DEAE220FD}.Release|Win32.ActiveCfg = Release|Win32
+		{9A18518C-38BF-48CA-88F8-206DEAE220FD}.Release|Win32.Build.0 = Release|Win32
+		{9A18518C-38BF-48CA-88F8-206DEAE220FD}.Release|x64.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{90B360C3-5D52-4906-8E92-19846F36DB23} = {E2398C90-1F1C-4DEB-9430-CC10D92C630A}
+		{ECC8A22B-8DA2-4D50-9679-0DA29AC7D4FF} = {E2398C90-1F1C-4DEB-9430-CC10D92C630A}
+		{32615C85-50B5-48DB-B611-C8046783FB9B} = {E2398C90-1F1C-4DEB-9430-CC10D92C630A}
+		{91746F52-8303-467D-84E5-F5633BF0EDD9} = {E2398C90-1F1C-4DEB-9430-CC10D92C630A}
+		{9A18518C-38BF-48CA-88F8-206DEAE220FD} = {E2398C90-1F1C-4DEB-9430-CC10D92C630A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A556665-6058-4543-AF78-C6FA1DE5CE36}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+; Remove registry key, which holds language setting and install path
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Aspyr\Guitar Hero III]
+
