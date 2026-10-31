@@ -93,8 +93,8 @@ bool UncappedFPS;
 int ManualResW;
 int ManualResH;
 // indev only
-bool BetterConsole;
-bool ShowStartupWarn;
+//bool BetterConsole;
+//bool ShowStartupWarn;
 
 void ParseIni()
 { 
@@ -107,8 +107,8 @@ void ParseIni()
         ManualResW = GH3config["Graphics"]["ManualResW"].as<int>();
         ManualResH = GH3config["Graphics"]["ManualResH"].as<int>();
         // indev only
-        BetterConsole = GH3config["IndevOnly"]["BetterConsole"].as<bool>();
-        ShowStartupWarn = GH3config["IndevOnly"]["ShowStartupWarn"].as<bool>();
+        //BetterConsole = GH3config["IndevOnly"]["BetterConsole"].as<bool>();
+        //ShowStartupWarn = GH3config["IndevOnly"]["ShowStartupWarn"].as<bool>();
     }
     catch(...)
     {
@@ -140,10 +140,11 @@ void ApplyHack()
 
     ParseIni();
 
-    if (BetterConsole)
-    {
-        EnableConsole();
-    }
+    // indev only
+    //if (BetterConsole)
+    //{
+    //    EnableConsole();
+    //}
 
     // surprise tool that'll help us later
     // edit: i did this like 6 months ago and i have done jack, i'm just gonna remove it for now
@@ -175,15 +176,15 @@ void ApplyHack()
 
     // indev only
     // i have this here so i can read the console output, not super necessary since the trust system is already in place lawl
-    if (ShowStartupWarn)
-    {
-        MessageBox(
-            NULL,
-            L"This is an Indev build of BetterGH3.\nDO NOT DISTRIBUTE!\n\n<3 2026 lunalawl & co // NeverHax",
-            L"BetterGH3 Indev",
-            MB_OK | MB_ICONEXCLAMATION
-        );
-    }
+    //if (ShowStartupWarn)
+    //{
+    //    MessageBox(
+    //        NULL,
+    //        L"This is an Indev build of BetterGH3.\nDO NOT DISTRIBUTE!\n\n<3 2026 lunalawl & co // NeverHax",
+    //        L"BetterGH3 Indev",
+    //        MB_OK | MB_ICONEXCLAMATION
+    //    );
+    //}
 
     // we out this bitch
     cout << "Starting game..." << endl;
